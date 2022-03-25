@@ -1,14 +1,3 @@
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-body{
-    max-width: 1440px;
-    margin: 0 auto;
-    font-size: 1.6rem;
-    background-color: white;
-}
 
 /* ----- Cabeçalho ----- */
 
@@ -17,9 +6,14 @@ body{
     position: relative;
 }
 
+.cabecalho .logo h1{
+    font-size: 0;
+}
+
 .cabecalho .logo{
     position: relative; 
-    background: url(../images/logo.jpg) center center;
+    background: url(../images/logo.jpg) 
+    center center;
     width: 100px;
     height: 100px;
     display: inline-block;
@@ -28,24 +22,15 @@ body{
     
 }
 
-.cabecalho .logo h1{
-    font-size: 0;
-}
-
 .cabecalho nav{
     display: inline-block;
     position: absolute;
     right: 2%;
-    margin-top: 38.12px;
+    margin-top: 58.12px;
 }
 
 .cabecalho ul li{
-    display: inline-block;
-    padding: 0px;
-}
-
-.cabecalho ul li{
-    padding: 15px 0px;
+    display: inline;   
 }
 
 .cabecalho ul li a{
@@ -102,19 +87,18 @@ body{
 }
 
 .secao-com-texto p{
+    display: inline-block;
     font-size: 18px;
-    max-width: 702px;
-    margin: 0 auto;
+    max-width: 700px;
 }
 
 .secao-com-texto.onde-estamos p{
     font-size: 28px;
-    max-width: 454px;
-    margin: 0 auto;
+    width: 450px;
 }
 
 .secao-com-texto.onde-estamos p spam{
-    color: #b9ab92;
+    color: #817867;
 }
 
 /* ----- Ladrilho ----- */
@@ -124,34 +108,38 @@ body{
 }
 
 .ladrilho .grande{
-    background: url(../images/4.jpg) center center no-repeat;
+    background: url(../images/4.jpg) 
+    center center no-repeat;
     height: 600px;
     width: 50%;
 }
 
 .ladrilho .pequeno.grao{
-    background: url(../images/3.jpg) center center no-repeat;
+    background: url(../images/3.jpg) 
+    center center no-repeat;
     height: 300px;
     width: 25%;
 }
 
 .ladrilho .pequeno{
-    background: url(../images/2.jpg) center center no-repeat;
+    background: url(../images/2.jpg) 
+    center center no-repeat;
     height: 300px;
     width: 25%;
 }
 
 .ladrilho .medio{
-    background: url(../images/1.jpg) center center no-repeat;
+    background: url(../images/1.jpg) 
+    center center no-repeat;
     height: 300px;
     width: 50%;
-
 }
 
 /* ----- Contato ----- */
 
 .contato{
-    background: url(../images/fundo-contato.jpg)  center center no-repeat;
+    background: url(../images/fundo-contato.jpg)  
+    center center no-repeat;
     color: white;
     height: 600px;
     position: relative;
@@ -178,7 +166,8 @@ body{
 /* ----- Rodapé ----- */
 
 .rodape{
-    background: url(../images/fundo-rodape.jpg) center center no-repeat;
+    background: url(../images/fundo-rodape.jpg) 
+    center center no-repeat;
     background-size: cover;
     padding: 35px 30px;
 }
@@ -196,7 +185,7 @@ body{
 }
 
 .rodape ul li{
-    display: inline-block;
+    display: inline;
     padding: 15px;
 }
 
@@ -222,7 +211,6 @@ body{
 
 .rodape .redes-sociais{
     float: right;
-    clear: left;
 }
 
 .rodape .conteudo-de-baixo{

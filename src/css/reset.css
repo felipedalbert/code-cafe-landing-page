@@ -1,12 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
     border: none;
-    outline: 0;
     font-weight: 300;
     box-sizing: border-box;
     font-family: 'Source Serif Pro' serif;
-
 }
 
 a{
@@ -20,4 +19,16 @@ ul{
 
 img{
     max-width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    background-color: white;
 }
