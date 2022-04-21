@@ -1,0 +1,31 @@
+@media (max-width: 768px){
+    .ladrilho .medio{
+        background: url(../images/1-resp2.jpg) center center;
+    }
+}
+
+@media (max-width: 720px){
+    .ladrilho .medio{
+        background: url(../images/1.jpg) center center no-repeat;
+    }
+}
+
+@media (max-width: 583px){
+    .ladrilho .medio{
+        background: url(../images/1-resp1.jpg) center center no-repeat;
+        
+    }
+}
+
+@media (max-width: 425px){
+    .ladrilho .medio{
+        background: url(../images/1-resp2.jpg) center center no-repeat;
+        
+    }
+}
+
+@media (max-width: 360px){
+    .ladrilho .medio{
+        background: url(../images/1-resp3.jpg) center center;
+    }
+}
