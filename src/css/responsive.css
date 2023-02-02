@@ -1,21 +1,6 @@
-
-/* ----- Cabeçalho ----- */
-
-@media (max-width: 473px){
-
-    .cabecalho{
-        text-align: center;
-    }
-
-    .cabecalho .logo{
-        left: 0px;
-    }
-
-    .cabecalho nav{
-        position: static;
-        display: block;
-        margin-top: 30px;
-        width: 100%;
+@media (max-width: 1440px){
+    .contato .texto-contato{
+        margin-right: 19vw;
     }
 
     .cabecalho nav ul li{
@@ -56,110 +41,115 @@
     }
 }
 
-/* ----- Ladrilho ----- */
+@media (max-width: 1024px){
+    .contato .texto-contato{
+        margin-right: 15.5vw;
+    }
+}
 
-@media (max-width: 768px){
-    .ladrilho .medio{
-        background: url(../images/1-resp2.jpg) center center;
+@media (max-width: 740px){
+    .secao-com-texto{
+        padding-inline: 15px;
+    }
+
+    .secao-com-texto p{
+        width: 100%;
     }
 }
 
 @media (max-width: 720px){
-    .ladrilho .grande{
-        width: 100%;
+    .ladrilho{
+        height: 1200px;
+        grid: "grande grande" 50%
+              "pequeno-grao pequeno" 25%
+              "medio medio" 25%
+              / 50% 50%;
     }
 
-    .ladrilho .medio{
-        background: url(../images/1.jpg) center center no-repeat;
-        width: 100%;
-    }
-
-    .ladrilho .pequeno, .ladrilho .pequeno.grao{
-        width: 50%;
-    }
-}
-
-@media (max-width: 583px){
-    .ladrilho .medio{
-        background: url(../images/1-resp1.jpg) center center no-repeat;
-        
-    }
-}
-
-@media (max-width: 425px){
-    .ladrilho .medio{
-        background: url(../images/1-resp2.jpg) center center no-repeat;
-        
-    }
-}
-
-@media (max-width: 360px){
-    .ladrilho .medio{
-        background: url(../images/1-resp3.jpg) center center;
-    }
-    .ladrilho .pequeno, .ladrilho .pequeno.grao{
-        width: 100%;
-    }
-}
-
-/* ----- Contato ----- */
-
-@media (max-width: 1024px){
-    .contato .texto-contato{
-        position: absolute;
-        top: 32%;
-        left: 50%;
-    }
-}
-
-@media (max-width: 745px){
     .contato{
         background-image: none;
         background-color: #d3ae71;
+        justify-content: center;
     }
 
     .contato .texto-contato{
-        width: 100%;
         text-align: center;
-
-        transform: translateX(-50%);
+        margin-right: unset;
     }
 
-    .contato h2{
-        margin-bottom: 46px;
-    }
-}
-
-@media (max-width: 330px){
-    .contato .texto-contato address{
-        font-size: 2.3rem;
-    }
-}
-
-/* ----- Rodapé ----- */
-
-@media (max-width: 720px){
     .rodape{
         background-image: none;
         background-color: black;
         text-align: center;
-    }
-
-    .rodape .logo-rodape{
-        margin-bottom: 122px;
+        justify-content: center;
+        gap: 122px;
     }
 
     .rodape ul{
-        width: 100%;
-        margin-bottom: 122px;
+        flex-basis: 100%;
+        
     }
 
     .rodape ul li{
         display: block;
     }
 
-    .rodape .redes-sociais{
-        float: none;
-        margin-bottom: 28px;
+    .rodape .conteudo-de-baixo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+    }
+    
+    .rodape .conteudo-de-baixo .copyright{
+        flex: 0 1 100%;
+        order: 1;
+    }
+}
+
+@media (max-width: 500px){
+
+    .cabecalho{
+        text-align: center;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .cabecalho .logo{
+        margin-top: 18px;
+    }
+
+    .cabecalho nav ul li{
+        display: block;
+        padding: 18px;
+    }
+    
+    .painel h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 473px){
+    .secao-com-texto h2{
+        font-size: 3rem;
+    }
+    .secao-com-texto.onde-estamos p{
+        font-size: 2rem;
+        width: 290px;
+    }
+}
+
+@media (max-width: 360px){
+    .ladrilho{
+        height: 1500px;
+        grid: "grande" 40%
+              "pequeno-grao" 20%
+              "pequeno" 20%
+              "medio" 20%;
+    }
+
+    .contato .texto-contato p{
+        font-size: 2.3rem;
     }
 }
