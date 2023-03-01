@@ -2,6 +2,43 @@
     .contato .texto-contato{
         margin-right: 19vw;
     }
+
+    .cabecalho nav ul li{
+        display: block;
+        padding: 18px;
+    }
+
+    
+}
+
+/* ----- Painel ----- */
+
+@media (max-width: 473px){
+    .painel h2{
+        font-size: 3rem;
+    }
+}
+
+/* ----- Seção com texto ----- */
+
+@media (max-width: 740px){
+    .secao-com-texto{
+        padding-inline: 15px;
+    }
+
+    .secao-com-texto p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 473px){
+    .secao-com-texto h2{
+        font-size: 3rem;
+    }
+    .secao-com-texto.onde-estamos p{
+        font-size: 2rem;
+        width: 290px;
+    }
 }
 
 @media (max-width: 1024px){
