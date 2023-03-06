@@ -31,7 +31,6 @@
 }
 
 .cabecalho ul li a:hover{
-    transition: .2 ease-in-out;
     background-color: #8e5b5a;
     color: white;
     border-radius: 80px;
