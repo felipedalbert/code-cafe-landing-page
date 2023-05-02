@@ -21,7 +21,7 @@
 }
 
 .cabecalho ul li{
-    display: inline;   
+    display: inline-block;   
 }
 
 .cabecalho ul li a{
